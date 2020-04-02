@@ -39,12 +39,8 @@ h4
 
 .marge_bordure
 {
-	margin-left: 30px;
-}
-
-.photo
-{
-	border: solid 3px #424242;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #loisir
@@ -78,7 +74,7 @@ h4
 	width: 70%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 40px;
+	margin-left: 45px;
 }
 
 #prenom
@@ -90,6 +86,7 @@ h4
 {
 	text-transform: uppercase;
 	border-bottom: solid 2px #FFCA28;
+	margin-right: 1.5%;
 	font-size: 1.3em;
 }
 
@@ -133,7 +130,7 @@ h4
 
 #formation
 {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .date
@@ -149,16 +146,16 @@ h4
 
 .partie2
 {
-	width: 10%;
+	width: 15%;
 	margin-top: 8px;
 }
 
 .partie3
 {
-	width: 85%;
+	width: 80%;
 	line-height: 0.7em;
 	margin-top: 4px;
-	margin-left: 50px;
+	margin-left: 80px;
 }
 
 .duree
@@ -166,27 +163,91 @@ h4
 	font-size: 0.8em;
 }
 
-#recommandations
-{
-	
-}
-
-#experience
-{
-
-}
-
 .portrait
 {
-
+	display: flex;
+	justify-content: center; 
 }
 
-#contact
+.photo
 {
-
+	width: 150px;
+	height: 150px;
+	border: solid 3px #E3C221;
+	border-radius: 50%;
+	margin: 25px 10px 10px 10px;
 }
 
-#a_propos
+@media all and (max-width: 1024px)
 {
+	body
+	{
+		display: block;
+		justify-content: center;
+		margin: auto;
+	}
 
+	#bordure
+	{
+		width: auto;
+	}
+
+	#corps
+	{
+		width: auto;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+	.texte
+	{
+		height: 250px;
+		text-align: justify;
+	}
+
+	.contact_small
+	{
+		text-align: center;
+	}
+
+	#nom_complet
+	{
+		text-align: center;
+	}
+
+	#sous_titre
+	{
+		text-align: center;
+	}
+
+	.partie1
+	{
+		width: 5%;
+	}
+
+	.partie2
+	{
+		width: 40%;
+	}
+
+	.partie3
+	{
+		width: 55%;
+		line-height: 0.9em;
+	}
+
+	#recommandations
+	{
+		text-align: center;
+	}
+
+	#experience
+	{
+		text-align: center;
+	}
+
+	#formation
+	{
+		text-align: center;
+	}
 }
