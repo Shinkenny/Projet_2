@@ -178,6 +178,17 @@ h4
 	margin: 25px 10px 10px 10px;
 }
 
+.ref
+{
+	width: 100%;
+	display: flex;
+}
+
+.refer
+{
+	width: 50%;
+}
+
 @media all and (max-width: 1024px)
 {
 	body
