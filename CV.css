@@ -146,16 +146,15 @@ h4
 
 .partie2
 {
-	width: 15%;
+	width: 30%;
 	margin-top: 8px;
 }
 
 .partie3
 {
-	width: 80%;
+	width: 65%;
 	line-height: 0.7em;
 	margin-top: 4px;
-	margin-left: 80px;
 }
 
 .duree
@@ -178,24 +177,71 @@ h4
 	margin: 25px 10px 10px 10px;
 }
 
-.ref
-{
-	width: 100%;
-	display: flex;
-}
-
 .refer
 {
-	width: 50%;
+	width: 35%;
 }
 
-@media all and (max-width: 1024px)
+@media all and (max-width: 768px)
+{
+	#bordure
+	{
+		width: 30%;
+	}
+
+	#corps
+	{
+		width: 70%;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+	.date
+	{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	.partie1
+	{
+		width: 10%;
+		height: 20px;
+		margin-left: 2%;
+	}
+
+	.partie2
+	{
+		width: 76%;
+		height: 20px;
+	}
+
+	.partie3
+	{
+		width: 100%;
+		line-height: 1em;
+		margin-left: 50px;
+	}
+
+	.refer
+	{
+		width: 100%;
+		margin-left: 50px;
+	}
+}
+
+@media all and (max-width: 767px)
 {
 	body
 	{
 		display: block;
 		justify-content: center;
 		margin: auto;
+	}
+
+	.contact_small
+	{
+		text-align: center;
 	}
 
 	#bordure
@@ -208,6 +254,7 @@ h4
 		width: auto;
 		margin-left: 7%;
 		margin-right: 7%;
+		text-align: center;
 	}
 
 	.texte
@@ -216,49 +263,34 @@ h4
 		text-align: justify;
 	}
 
-	.contact_small
+	.date
 	{
-		text-align: center;
-	}
-
-	#nom_complet
-	{
-		text-align: center;
-	}
-
-	#sous_titre
-	{
-		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
 	}
 
 	.partie1
 	{
-		width: 5%;
+		width: 10%;
+		height: 20px;
+		margin-left: 2%;
 	}
 
 	.partie2
 	{
-		width: 40%;
+		width: 76%;
+		height: 20px;
 	}
 
 	.partie3
 	{
-		width: 55%;
+		width: 100%;
 		line-height: 0.9em;
 	}
 
-	#recommandations
+	.refer
 	{
-		text-align: center;
-	}
-
-	#experience
-	{
-		text-align: center;
-	}
-
-	#formation
-	{
-		text-align: center;
+		width: 100%;
 	}
 }
