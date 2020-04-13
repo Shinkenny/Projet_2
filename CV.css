@@ -24,7 +24,7 @@ h4
 	width: 30%;
 	display: flex;
 	flex-direction: column;
-	background-color: #FFCA28;
+	background-color: #80CBC4;
 }
 
 .rubrique
@@ -33,14 +33,20 @@ h4
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.2em;
-	color: #FFCA28;
+	color: #80CBC4;
 	padding: 2px;
 }
 
 .marge_bordure
 {
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.texte
+{
+	height: 250px;
+	text-align: justify;
 }
 
 #loisir
@@ -74,25 +80,26 @@ h4
 	width: 70%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 45px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #prenom
 {
-	color: #FFC107;
+	color: #80CBC4;
 }
 
 .titre
 {
 	text-transform: uppercase;
-	border-bottom: solid 2px #FFCA28;
+	border-bottom: solid 2px #80CBC4;
 	margin-right: 1.5%;
 	font-size: 1.3em;
 }
 
 .fa-color
 {
-	color: #FFCA28;
+	color: #80CBC4;
 	margin-right: 20px;
 	margin-bottom: 10px;
 }
@@ -125,7 +132,7 @@ h4
 
 #bordure_sous_titre
 {
-	border-bottom: 2px solid #FFCA28;
+	border-bottom: 2px solid #80CBC4;
 }
 
 #formation
@@ -146,20 +153,20 @@ h4
 
 .partie2
 {
-	width: 30%;
+	width: 35%;
 	margin-top: 8px;
 }
 
 .partie3
 {
-	width: 65%;
-	line-height: 0.7em;
+	width: 60%;
+	line-height: 0.9em;
 	margin-top: 4px;
 }
 
 .duree
 {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 .portrait
@@ -172,14 +179,14 @@ h4
 {
 	width: 150px;
 	height: 150px;
-	border: solid 3px #E3C221;
+	border: solid 3px #4DB6AC;
 	border-radius: 50%;
 	margin: 25px 10px 10px 10px;
 }
 
 .refer
 {
-	width: 35%;
+	width: 40%;
 }
 
 @media all and (max-width: 768px)
@@ -194,6 +201,17 @@ h4
 		width: 70%;
 		margin-left: 7%;
 		margin-right: 7%;
+	}
+
+	.marge_bordure
+	{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.texte
+	{
+		text-align: left;
 	}
 
 	.date
@@ -235,8 +253,11 @@ h4
 	body
 	{
 		display: block;
-		justify-content: center;
-		margin: auto;
+	}
+
+	h4
+	{
+		font-size: 0.8em;
 	}
 
 	.contact_small
@@ -244,37 +265,30 @@ h4
 		text-align: center;
 	}
 
+	.marge_bordure
+	{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+
 	#bordure
 	{
-		width: auto;
+		width: 100%;
 	}
 
 	#corps
 	{
-		width: auto;
-		margin-left: 7%;
-		margin-right: 7%;
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
 		text-align: center;
 	}
 
 	.texte
 	{
-		height: 250px;
+		height: 500px;
 		text-align: justify;
-	}
-
-	.date
-	{
-		display: flex;
-		flex-wrap: wrap;
-		align-content: center;
-	}
-
-	.partie1
-	{
-		width: 10%;
-		height: 20px;
-		margin-left: 2%;
 	}
 
 	.partie2
@@ -286,11 +300,42 @@ h4
 	.partie3
 	{
 		width: 100%;
+		margin-left: 38px;
+		margin-right: 38px;
 		line-height: 0.9em;
 	}
 
 	.refer
 	{
 		width: 100%;
+		margin-left: 0px;
+	}
+
+	.titre
+	{
+		font-size: 1.1em;
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+
+	#sous_titre
+	{
+		text-align: center;
+	}
+
+	#nom_complet
+	{
+		font-size: 2.2em;
+		text-align: center;
+	}
+
+	#formation
+	{
+		margin-top: 0px;
+	}
+
+	.bold_text
+	{
+		font-size: 1em;
 	}
 }
