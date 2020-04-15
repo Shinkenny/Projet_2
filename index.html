@@ -14,16 +14,13 @@
 	</head>
 
 	<body>
-		<section id="bordure"> <!-- Partie de gauche -->
-			<div class="portrait">
-				<img src="Images/Kenny_Park_(forum).jpg" alt="Une photo de Sébastien Corbelin" class="photo" />
-			</div>
+		<aside id="bordure"> <!-- Partie de la bordure (à gauche) -->
+			<section class="portrait">
+				<h2><img src="Images/Seb.jpg" alt="Une photo de Sébastien Corbelin" class="photo" /></h2>
+			</section>
 
-			<div id="contact">
-			    <h2 class="rubrique">Contact</h2>
-			</div>
-
-			<div class="contact_small">
+			<section class="contact_small">
+				<h2 class="rubrique">Contact</h2>
 				<div class="marge_bordure">
 					<p>Adresse<br />
 					Rochemaure, France</p>
@@ -36,37 +33,39 @@
 					<p>Skype<br />
 					@username</p>
 				</div>
-			</div>
+			</section>
 
-			<div id="a_propos">
+			<section id="a_propos"> <!-- Partie A propos de moi -->
 			    <h2 class="rubrique">à propos de moi</h2>
-			</div>
-
-			<div class="texte">
+			    <div class="texte">
 				<p class="marge_bordure">
 				Actuellement employé chez Amazon.fr, mon expérience m'a permis de mener à bien plusieurs lancements de projets et nouveaux procédés.<br />
 			    D'une nature autodidacte, j'aime apprendre de nouvelles choses en permanence: dessin, musique, création de jeux vidéo...<br />
 			    Petit à petit, j'en suis venu à la programmation et ce secteur en évolution constante est devenue une passion.<br />
 			    J'ai donc décidé de suivre la formation Open Classrooms afin d'améliorer mes compétences et d'en obtenir de nouvelles.</p>
 			</div>
+			</section>
 
-			<div id="loisir">
+			<section id="loisir"> <!-- Partie Loisirs -->
 			    <h2 class="rubrique">loisirs</h2>
 			    <div id="icons">
 				    <i class="fas fa-laptop-code fa-circle circle"></i>
 				    <i class="fas fa-gamepad fa-circle circle"></i>
 				    <i class="fas fa-pencil-alt fa-circle circle"></i>
 			    </div>
-			</div>
-		</section>
+			</section>
+		</aside>
 
-		<section id="corps"> <!-- Partie de droite -->
-			<div>
+		<main id="corps"> <!-- Partie principale (à droite) -->
+			<header>
+				<section class="portrait_mobile">
+				<h2><img src="Images/Seb.jpg" alt="Une photo de Sébastien Corbelin" class="photo" /></h2>
+				</section>
 				<p id="nom_complet"><span id="prenom">Sébastien</span> Corbelin</p>
 				<p id="sous_titre"><span><span id="bordure_sous_titre">Dével</span>oppeur web freelance</span></p>
-			</div>
+			</header>
 
-			<div id="formation">
+			<section id="formation"> <!-- Partie Formation -->
 				<h2 class="titre"><i class="fas fa-graduation-cap fa-color"></i>Formation</h2>
 				<article class="date"> 
 	                <div class="partie1">
@@ -99,9 +98,9 @@
 	                    <p class="duree">Des études spécialisées dans la chimie organique.</p>
 	                </div>      		
 	            </article>
-			</div>
+			</section>
 
-			<div id="experience">
+			<section id="experience"> <!-- Partie Expérience -->
 				<h2 class="titre"><i class="fas fa-toolbox fa-color"></i>Expérience professionnelle</h2>
 				<article class="date"> 
 	                <div class="partie1">
@@ -166,16 +165,16 @@
 	                    <p class="duree">Manutention polyvalente à différents postes sur la chaine de production.</p>
 	                </div>      		
 	            </article>
-	        </div>
+	        </section>
 
-			<div id="recommandations">
+			<section id="recommandations"> <!-- Partie Recommandations -->
 				<h2 class="titre"><i class="fas fa-pencil-alt fa-color"></i>Recommandations</h2>
 				<div class="date">
 					<div class="refer">
 						<p class="duree"><span class="bold_text">Richard Ngu Leubou</span></p>
 						<p class="duree">Mentor chez Openclassrooms<br />
 						Téléphone : XX XX XX XX XX<br />
-						Email : godleubourichard@yahoo.fr</p>
+						Email : mentor@yahoo.fr</p>
 					</div>
 
 					<div class="refer">
@@ -185,7 +184,7 @@
 						Email : Anotherguy@hotmail.com</p>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 	</body>
 </html>

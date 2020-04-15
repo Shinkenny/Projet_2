@@ -1,4 +1,4 @@
-body
+body /* Affichage PC */
 {
 	display: flex;
 	justify-content: center;
@@ -9,6 +9,11 @@ body
 h4
 {
 	text-transform: uppercase;
+}
+
+.portrait_mobile
+{
+	display: none;
 }
 
 .bold_text
@@ -34,7 +39,7 @@ h4
 	text-align: center;
 	font-size: 1.2em;
 	color: #80CBC4;
-	padding: 2px;
+	padding: 10px;
 }
 
 .marge_bordure
@@ -108,7 +113,7 @@ h4
 {
 	font-size: 0.8em;
 	margin-right: 19px;
-	margin-top: 8px;
+	margin-top: 10px;
 }
 
 .dot_size2
@@ -116,6 +121,7 @@ h4
 	font-size: 0.5em;
 	margin-left: 2px;
 	margin-right: 20px;
+	margin-top: 12px;
 }
 
 #nom_complet
@@ -160,7 +166,7 @@ h4
 .partie3
 {
 	width: 60%;
-	line-height: 0.9em;
+	line-height: 1em;
 	margin-top: 4px;
 }
 
@@ -189,16 +195,16 @@ h4
 	width: 40%;
 }
 
-@media all and (max-width: 768px)
+@media all and (max-width: 768px) /* Affichage Tablette */
 {
 	#bordure
 	{
-		width: 30%;
+		width: 40%;
 	}
 
 	#corps
 	{
-		width: 70%;
+		width: 60%;
 		margin-left: 7%;
 		margin-right: 7%;
 	}
@@ -238,7 +244,7 @@ h4
 	{
 		width: 100%;
 		line-height: 1em;
-		margin-left: 50px;
+		margin-left: 47px;
 	}
 
 	.refer
@@ -246,13 +252,22 @@ h4
 		width: 100%;
 		margin-left: 50px;
 	}
+
+	.dot_size2
+	{
+		font-size: 0.5em;
+		margin-left: 0px;
+		margin-right: 20px;
+		margin-top: 12px;
+	}
 }
 
-@media all and (max-width: 767px)
+@media all and (max-width: 767px) /* Affichage Mobile */
 {
 	body
 	{
-		display: block;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	h4
@@ -291,10 +306,15 @@ h4
 		text-align: justify;
 	}
 
+	.partie1
+	{
+		display: none;
+	}
+
 	.partie2
 	{
-		width: 76%;
-		height: 20px;
+		width: 100%;
+		height: 40px;
 	}
 
 	.partie3
@@ -337,5 +357,14 @@ h4
 	.bold_text
 	{
 		font-size: 1em;
+	}
+	.portrait_mobile
+	{
+		display: block;
+	}
+
+	.portrait
+	{
+		display: none;
 	}
 }
