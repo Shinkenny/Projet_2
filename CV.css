@@ -196,7 +196,7 @@ h4
 	width: 50%;
 }
 
-@media all and (max-width: 768px) /* Affichage Tablette */
+@media all and (max-width: 992px) /* Affichage Tablette */
 {
 	#bordure
 	{
